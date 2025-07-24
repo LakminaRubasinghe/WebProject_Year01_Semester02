@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Register</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../All CSS/Global_CSS.css" rel="stylesheet">
+</head>
+
+<body class="bg-light">
+    <div
+        style="background-image: url('../All Images/Register.jpg'); background-size: cover; background-repeat: no-repeat; background-position: center;">
+
+        <ul class="nav justify-content-end">
+            <li class="nav-item">
+                <a class="nav-link" href="../index.html">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="aboutus.html">About Us</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="contactus.html">Contact Us</a>
+            </li>
+        </ul>
+
+        <div class="container d-flex align-items-center justify-content-center min-vh-100">
+            <div class="col-12 col-sm-10 col-md-8 col-lg-5">
+                <div class="card shadow-sm p-4">
+                    <h2 class="text-center mb-4">Register</h2>
+                    <form onsubmit="return validateForm()" id="registerForm" novalidate>
+
+                        <div class="mb-3">
+                            <label for="fullName" class="form-label">Full Name</label>
+                            <input type="text" class="form-control" id="fullName" placeholder="Your full name">
+                            <small id="fullNameError" class="text-danger d-block mt-1"
+                                style="font-size: 0.875rem;"></small>
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="deliveryAddress" class="form-label">Delivery Address</label>
+                            <textarea class="form-control" id="deliveryAddress" rows="2"
+                                placeholder="Your full delivery address"></textarea>
+                            <small id="addressError" class="text-danger d-block mt-1"
+                                style="font-size: 0.875rem;"></small>
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Email address</label>
+                            <input type="text" class="form-control" id="email" placeholder="you@example.com">
+                            <small id="emailError" class="text-danger d-block mt-1"
+                                style="font-size: 0.875rem;"></small>
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="contactNumber" class="form-label">Contact Number</label>
+                            <input type="text" class="form-control" id="contactNumber" placeholder="e.g : 071 268 2068">
+                            <small id="contactError" class="text-danger d-block mt-1"
+                                style="font-size: 0.875rem;"></small>
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="inputPassword" class="form-label">Password</label>
+                            <input type="password" class="form-control" id="inputPassword"
+                                placeholder="Create your password">
+                            <small id="passwordError" class="text-danger d-block mt-1"
+                                style="font-size: 0.875rem;"></small>
+
+                            <div class="form-check mt-2">
+                                <input type="checkbox" class="form-check-input" id="togglePassword"
+                                    onclick="togglePasswordVisibility()">
+                                <label class="form-check-label" for="togglePassword">Show Password</label>
+                            </div>
+                        </div>
+
+                        <button type="submit" class="btn btn-success w-100"
+                            href="../All HTML/menu.html">Register</button>
+                    </form>
+
+                    <div class="mt-3 text-center">
+                        <small>
+                            Already have an account ?
+                            <a href="../All HTML/SignIn.html">&nbsp;Sign in here</a>
+                        </small>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <footer class="bg-dark text-white text-center p-3 mt-5">
+            &copy; 2025 FoodExpress. All rights reserved.
+        </footer>
+
+    </div>
+
+    <script>
+        function togglePasswordVisibility() {
+            const passwordInput = document.getElementById("inputPassword");
+            passwordInput.type = passwordInput.type === "password" ? "text" : "password";
+        }
+
+        function validateForm() {
+
+            const fullName = document.getElementById("fullName").value.trim();
+            const address = document.getElementById("deliveryAddress").value.trim();
+            const email = document.getElementById("email").value.trim();
+            const contact = document.getElementById("contactNumber").value.trim();
+            const password = document.getElementById("inputPassword").value.trim();
+
+            const fullNameError = document.getElementById("fullNameError");
+            const addressError = document.getElementById("addressError");
+            const emailError = document.getElementById("emailError");
+            const contactError = document.getElementById("contactError");
+            const passwordError = document.getElementById("passwordError");
+
+            fullNameError.textContent = "";
+            addressError.textContent = "";
+            emailError.textContent = "";
+            contactError.textContent = "";
+            passwordError.textContent = "";
+
+            let isValid = true;
+
+            if (fullName === "") {
+                fullNameError.textContent = "Please enter your full name.";
+                isValid = false;
+            }
+
+            if (address === "") {
+                addressError.textContent = "Please enter your delivery address.";
+                isValid = false;
+            }
+
+            const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            if (email === "") {
+                emailError.textContent = "Please enter your email address.";
+                isValid = false;
+            } else if (!emailPattern.test(email)) {
+                emailError.textContent = "Please enter a valid email address.";
+                isValid = false;
+            }
+
+            const contactPattern = /^0\d{2}[\s-]?\d{3}[\s-]?\d{4}$/;
+            if (contact === "") {
+                contactError.textContent = "Please enter your contact number.";
+                isValid = false;
+            } else if (!contactPattern.test(contact)) {
+                contactError.textContent = "Please enter a valid contact number (e.g., 071 234 5678).";
+                isValid = false;
+            }
+
+            if (password === "") {
+                passwordError.textContent = "Please enter a password.";
+                isValid = false;
+            }
+
+            if (isValid) {
+                window.location.href = "menu.html";
+            }
+
+            return false;
+        }
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

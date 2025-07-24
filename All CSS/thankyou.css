@@ -1,0 +1,87 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css");
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #222831;
+    color: #393E46;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.main_section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 88vh;
+
+}
+
+.thankyou_card {
+
+    border-radius: 50px;
+    padding: 10vh 20vh;
+    background-color: #DFD0B8;
+    color: #393E46;
+    border: none;
+    box-shadow: 0 0 10px rgba(148, 137, 121, 0.15);
+
+    animation: flipIn 1s ease forwards;
+    transform: rotateY(90deg);
+    opacity: 0;
+}
+
+@keyframes flipIn {
+    to {
+        transform: rotateY(0deg);
+        opacity: 1;
+    }
+}
+
+.thankyou_card h1 {
+    font-size: 300%;
+    font-family: oblique;
+    text-align: center;
+    line-height: 0.75%;
+}
+
+.thankyou_card p {
+    font-size: 150%;
+    color: gray;
+    text-align: center;
+}
+
+.thankyou_card button {
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    background-color: #393E46;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 10px;
+    font-size: 150%;
+}
+
+.thankyou_card button:hover {
+    background-color: #222831;
+}
+
+.back {
+    display: flex;
+    justify-content: end;
+    align-items: end;
+}
+
+.back button {
+    margin: 20px;
+    background-color: #DFD0B8;
+    color: #222831;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 10px;
+    font-size: 150%;
+}
+
+.back button:hover {
+    background-color: #d5bb91;
+}

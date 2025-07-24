@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+   <title>Online Food Ordering and Delivery System</title>
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+   <link rel="stylesheet" href="../All CSS/Global_CSS.css">
+   <link rel="stylesheet" href="../All CSS/menu.css">
+</head>
+
+<body>
+
+   <ul class="nav justify-content-end">
+      <li class="nav-item">
+         <a class="nav-link" href="../index.html">Home</a>
+      </li>
+      <li class="nav-item">
+         <a class="nav-link" href="aboutus.html">About Us</a>
+      </li>
+      <li class="nav-item">
+         <a class="nav-link" href="contactus.html">Contact Us</a>
+      </li>
+   </ul>
+   <div style="background-image: url('../All Images/banner.png');">
+      <h1 class="h11">Menu</h1>
+      <div>
+         <table>
+
+            <div>
+               <tr class="tablehead no-hover">
+                  <th class="tablehead1">Food</th>
+                  <th class="tableprice">Description & Price</th>
+               </tr>
+            </div>
+
+            <tr>
+               <td><img src="../All Images/burger.jpg" alt="burger" class="imgburger"><br>
+                  <h3>Burger</h3>
+               </td>
+               <td class="desburger"><br>
+                  <p>Delicious, juicy burgers made with fresh ingredients,<br> served in soft buns with your choice of
+                     toppings.<br> Perfect for a quick and tasty meal</p>
+                  <br>
+                  <p class="p1">Price Rs.950 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <button
+                        onclick="buyNow('Burger','Delicious, juicy burgers made with fresh ingredients, served in soft buns with your choice of toppings. Perfect for a quick and tasty meal','../All Images/burger.jpg','950')">Buy
+                        Now</button></p>
+               </td>
+            </tr>
+
+            <tr>
+               <td><img src="../All Images/fride rice.jpg" alt="rice" class="imgburger"><br>
+                  <h3>Fried Rice</h3>
+               </td>
+               <td class="desburger"><br>
+                  <p>Tasty fried rice cooked with fresh vegetables, eggs,<br> and your choice of meat or seafood.<br> A
+                     flavorful and satisfying meal for any time of day!</p>
+                  <br>
+                  <p class="p1">Price Rs.1500 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <button
+                        onclick="buyNow('Fried Rice','Tasty fried rice cooked with fresh vegetables, eggs, and your choice of meat or seafood. A flavorful and satisfying meal for any time of day!','../All Images/fride rice.jpg','1500')">Buy
+                        Now</button></p>
+               </td>
+            </tr>
+
+            <tr>
+               <td><img src="../All Images/pizza.jpg" alt="pizza" class="imgburger"><br>
+                  <h3>Pizza</h3>
+               </td>
+               <td class="desburger"><br>
+                  <p>Hot, cheesy pizzas with a crispy crust and<br> rich toppings like pepperoni, vegetables, and
+                     more.<br>
+                     Made fresh and perfect for sharing!</p>
+                  <br>
+                  <p class="p1">Price Rs.2500 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <button
+                        onclick="buyNow('Pizza','Hot, cheesy pizzas with a crispy crust and rich toppings like pepperoni, vegetables, and more. Made fresh and perfect for sharing!','../All Images/pizza.jpg','2500')">Buy
+                        Now</button></p>
+               </td>
+            </tr>
+
+            <tr>
+               <td><img src="../All Images/pasta.jpg" alt="pasta" class="imgburger"><br>
+                  <h3>Pasta</h3>
+               </td>
+               <td class="desburger"><br>
+                  <p>Delicious pasta cooked to perfection, mixed<br> with rich sauces and fresh ingredients.<br> A warm
+                     and
+                     comforting meal for any occasion!</p>
+                  <br>
+                  <p class="p1">Price Rs.2000 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <button
+                        onclick="buyNow('Pasta','Delicious pasta cooked to perfection, mixed with rich sauces and fresh ingredients. A warm and comforting meal for any occasion!','../All Images/pasta.jpg','2000')">Buy
+                        Now</button></p>
+               </td>
+            </tr>
+
+            <tr>
+               <td><img src="../All Images/bubble tea.jpg" alt="bubble" class="imgburger"><br>
+                  <h3>Bubble Tea</h3>
+               </td>
+               <td class="desburger"><br>
+                  <p>Refreshing bubble tea made with sweet milk<br> or fruit flavors, served with chewy tapioca
+                     pearls.<br>
+                     A fun and tasty drink you will love!</p>
+                  <br>
+                  <p class="p1">Price Rs.990 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <button
+                        onclick="buyNow('Bubble Tea','Refreshing bubble tea made with sweet milk or fruit flavors, served with chewy tapioca pearls.A fun and tasty drink you will love!','../All Images/bubble tea.jpg','990')">Buy
+                        Now</button></p>
+               </td>
+            </tr>
+
+            <tr>
+               <td><img src="../All Images/biryani.jpg" alt="biryani" class="imgburger"><br>
+                  <h3>Biryani</h3>
+               </td>
+               <td class="desburger"><br>
+                  <p>Aromatic and flavorful biryani made with fragrant basmati rice,<br> tender meat or vegetables, and
+                     a blend of rich spices.<br> A true feast in every bite!</p>
+                  <br>
+                  <p class="p1">Price Rs.2800 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <button
+                        onclick="buyNow('Biryani','Aromatic and flavorful biryani made with fragrant basmati rice, tender meat or vegetables, and a blend of rich spices.A true feast in every bite!','../All Images/biryani.jpg','2800')">Buy
+                        Now</button></p>
+               </td>
+            </tr>
+
+            <tr>
+               <td><img src="../All Images/lasgna.jpg" alt="lasgna" class="imgburger"><br>
+                  <h3>Lasagna</h3>
+               </td>
+               <td class="desburger"><br>
+                  <p>Layers of pasta, rich meat or vegetable filling,<br> creamy sauce, and melted cheese baked to
+                     perfection.<br> A hearty and comforting Italian classic!</p>
+                  <br>
+                  <p class="p1">Price Rs.1650 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <button
+                        onclick="buyNow('Lasagna','Layers of pasta, rich meat or vegetable filling,creamy sauce, and melted cheese baked to perfection. A hearty and comforting Italian classic!','../All Images/lasgna.jpg','1650')">Buy
+                        Now</button></p>
+               </td>
+            </tr>
+
+            <tr>
+               <td><img src="../All Images/pho.jpg" alt="burger" class="imgburger"><br>
+                  <h3>Pho</h3>
+               </td>
+               <td class="desburger"><br>
+                  <p>A warm and flavorful Vietnamese noodle soup<br> made with aromatic broth, rice noodles,<br> tender
+                     meat, and fresh herbs. Comfort in a bowl!</p>
+                  <br>
+                  <p class="p1">Price Rs.1100 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <button
+                        onclick="buyNow('Pho','A warm and flavorful Vietnamese noodle soup made with aromatic broth, rice noodles, tender meat, and fresh herbs. Comfort in a bowl!','../All Images/pho.jpg','1100')">Buy
+                        Now</button></p>
+               </td>
+            </tr>
+
+            <tr>
+               <td><img src="../All Images/Corn Dogs.jpg" alt="burger" class="imgburger"><br>
+                  <h3>Corn Dogs</h3>
+               </td>
+               <td class="desburger"><br>
+                  <p>Crispy, golden corn dogs made by coating juicy,<br> sausages in a sweet cornmeal batter<br> and
+                     deep-frying to perfection. A fun and tasty snack!</p>
+                  <br>
+                  <p class="p1">Price Rs.1400 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <button
+                        onclick="buyNow('Corn Dogs','Crispy, golden corn dogs made by coating juicy,sausages in a sweet cornmeal batter and deep-frying to perfection. A fun and tasty snack!','../All Images/Corn Dogs.jpg','1400')">Buy
+                        Now</button></p>
+               </td>
+            </tr>
+
+            <tr>
+               <td><img src="../All Images/ramen.jpg" alt="burger" class="imgburger"><br>
+                  <h3>Ramen</h3>
+               </td>
+               <td class="desburger"><br>
+                  <p>Savory Japanese noodle soup with rich broth,<br> tender noodles, and toppings like meat, egg,<br>
+                     and
+                     vegetables. A comforting and delicious meal!</p>
+                  <br>
+                  <p class="p1">Price Rs.1500 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <button
+                        onclick="buyNow('Ramen','Savory Japanese noodle soup with rich broth, tender noodles, and toppings like meat, egg, and vegetables. A comforting and delicious meal!','../All Images/ramen.jpg','1500')">Buy
+                        Now</button></p>
+               </td>
+            </tr>
+
+         </table>
+      </div>
+
+
+      <div>
+         <footer class="bg-dark text-white text-center p-3 mt-5">
+            &copy; 2025 FoodExpress. All rights reserved.
+         </footer>
+      </div>
+   </div>
+   <script>
+      function buyNow(title, desc, imageUrl, price) {
+         const item = {
+            title: title,
+            description: desc,
+            image: imageUrl,
+            price: price
+         };
+         localStorage.setItem("cartItem", JSON.stringify(item));
+         window.location.href = "../All HTML/cart.html";
+      }
+   </script>
+</body>
+
+</html>

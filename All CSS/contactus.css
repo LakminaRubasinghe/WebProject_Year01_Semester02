@@ -1,0 +1,119 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: url('../All Images/contactus-banner.jpg') no-repeat fixed;
+    background-size: cover;
+}
+
+.parent {
+    display: flex;
+    justify-content: end;
+    flex-wrap: wrap;
+    height: 100vh;
+}
+
+.main {
+    padding: 0 40px;
+    background-color: #948979;
+    align-content: center;
+    width: 500px;
+    height: 100%;
+}
+
+.time {
+    display: flex;
+    justify-content: end;
+    flex-wrap: wrap;
+}
+
+.contact-info h1 {
+    margin-top: 50px;
+    margin-bottom: 30px;
+    text-align: center;
+    font-style: oblique;
+    font-size: 300%;
+}
+
+.contact-info p {
+    font-weight: bold;
+    font-size: 100%;
+    line-height: 75%;
+}
+
+.contact-info a {
+    text-decoration: none;
+    color: white;
+}
+
+.contact-input input,
+.contact-input textarea {
+    width: 100%;
+    height: 35px;
+    border-style: hidden;
+    padding: 2px 0;
+    margin-bottom: 10px;
+    border-radius: 4px;
+    background-color: seashell;
+    font-size: 20px;
+}
+
+#name {
+    margin-bottom: 0px;
+    border-bottom: 2px solid;
+}
+
+#name-error {
+    color: yellow;
+    font-size: 16px;
+}
+
+#email {
+    margin-top: 14px;
+    margin-bottom: 0px;
+    border-bottom: 2px solid;
+}
+
+#email-error {
+    color: yellow;
+    font-size: 16px;
+}
+
+#message {
+    margin-top: 14px;
+    margin-bottom: -3px;
+    border-bottom: 2px solid;
+}
+
+#message-error {
+    color: yellow;
+    font-size: 16px;
+}
+
+.contact-input {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-input textarea {
+    height: 80px;
+}
+
+.contact-input button {
+    background-color: red;
+    border-radius: 15px;
+    padding: 12px;
+    border-style: hidden;
+    color: white;
+    font-weight: bold;
+    margin: 5% 20%;
+}
+
+.contact-input button:hover {
+    background-color: darkred;
+}

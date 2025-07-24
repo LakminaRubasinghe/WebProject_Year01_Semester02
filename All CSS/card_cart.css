@@ -1,0 +1,136 @@
+/*styles for cart*/
+
+.bg-light-page {
+  background-color: #222831;
+  color: #393E46;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.container {
+  background-color: transparent;
+}
+
+.card {
+  background-color: #DFD0B8;
+  color: #393E46;
+  border: none;
+  box-shadow: 0 0 10px rgba(148, 137, 121, 0.15);
+}
+
+.card.btn {
+  background-color: #222831;
+  color: #222831;
+  border: none;
+}
+
+.card.btn:hover {
+  background-color: #DFD0B8;
+  color: #222831;
+}
+
+#payment-buttons {
+  text-align: center;
+  margin-top: 2rem;
+}
+
+#payment-buttons button {
+  background-color: #393E46;
+  border: none;
+  color: white;
+  padding: 14px 28px;
+  margin: 10px;
+  font-size: 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.card-img-top {
+  max-width: 300px;
+  height: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+#payment-buttons button a {
+  color: white;
+  text-decoration: none;
+  display: block;
+}
+
+#payment-buttons .pay1:hover {
+  background-color: #948979;
+}
+
+#payment-buttons .pay2 {
+  background-color: #393E46;
+}
+
+#payment-buttons .pay2:hover {
+  background-color: #948979;
+}
+
+.text-danger {
+  color: #ff6b6b;
+}
+
+h1,
+h5 {
+  color: #393E46;
+}
+
+/*Styles for cardpayment.html*/
+
+.card-payment {
+  background-color: #DFD0B8;
+  border-radius: 12px;
+  padding: 2rem;
+  box-shadow: 0 0 10px rgba(148, 137, 121, 0.15);
+  max-width: 600px;
+  margin: 3rem auto;
+}
+
+h2.card-payment-title {
+  background-color: transparent;
+  color: #393E46;
+  text-align: center;
+  margin-bottom: 1.5rem;
+  font-size: 1.75rem;
+}
+
+label {
+  font-weight: 500;
+  color: #393E46;
+}
+
+.textbox.input.form-control {
+  background-color: #DFD0B8;
+  color: #222831;
+  border: none;
+  border-radius: 8px;
+}
+
+.textbox.input.form-control:focus {
+  box-shadow: 0 0 0 2px #948979;
+  background-color: #fff;
+}
+
+.form-check-label {
+  color: #393E46;
+}
+
+.btn-primary {
+  background-color: #393E46;
+  border: none;
+  color: #DFD0B8;
+  padding: 0.6rem 1.5rem;
+  border-radius: 8px;
+  transition: background-color 0.3s ease;
+}
+
+.btn-primary:hover {
+  background-color: #222831;
+  color: #fff;
+}
